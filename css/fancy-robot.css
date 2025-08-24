@@ -1,6 +1,8 @@
 .robot-container {
-  margin-top: 250px;
-  margin-left: 150px;
+  position: relative;
+  left: 50%;
+  top: calc(50% + 20px);
+  transform: translate(-50%, -50%);
   width: 470px;
   height: 700px;
   background-color: rgb(255, 111, 0);
@@ -8,6 +10,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  font-size: large;
 }
 
 .robot-face-shape {
@@ -27,8 +30,8 @@
   position: absolute;
   margin-top: -200px;
   margin-left: -225px;
-  width: 100px;
-  height: 100px;
+  width: 6em;
+  height: 4em;
   background: linear-gradient(135deg, yellow, rgb(212, 98, 11), red);
   clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
 }
@@ -46,11 +49,15 @@
 .robot-ear-left {
   position: absolute;
   margin-top: -200px;
-  margin-left: -622px;
-  width: 150px;
-  height: 300px;
-  background: linear-gradient(270deg,rgb(255, 0, 0), rgb(75, 10, 10),rgb(0, 0, 0));
-  clip-path: polygon(50% 25%, 75% 50%, 50% 75%, 100% 50%);
+  margin-left: -550px;
+  width: 80px;
+  height: 80px;
+  background: linear-gradient(
+    270deg,
+    rgb(255, 0, 0),
+    rgb(75, 10, 10),
+    rgb(0, 0, 0)
+  );
 }
 
 .robot-ear-right {
@@ -59,16 +66,26 @@
   margin-left: 509px;
   width: 75px;
   height: 300px;
-  background: linear-gradient(90deg,rgb(255, 0, 0),rgb(54, 10, 10));
+  background: linear-gradient(90deg, rgb(255, 0, 0), rgb(54, 10, 10));
   clip-path: polygon(50% 25%, 25% 75%, 75% 100%, 100% 50%);
+}
+
+.robot-ear-right-hole {
+  position: absolute;
+  top: 65%;
+  left: 30%;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-image: url("/assets/images/earhole.jpg");
 }
 
 .robot-nose {
   position: absolute;
-  margin-top: 0px;
-  margin-left: 0px;
-  width: 50px;
-  height: 100px;
+  top: 44%;
+  left: 45%;
+  width: 14%;
+  height: 14%;
   background: linear-gradient(0deg, yellow, rgb(212, 98, 11), red);
   clip-path: polygon(50% 0%, 0% 50%, 50% 100%, 100% 50%);
 }
@@ -96,8 +113,8 @@
   margin-left: 0px;
   width: 50px;
   height: 40px;
-  background-color: rgb(130, 126, 126);
-  border-radius: 5px;
+  background-color: darkgrey;
+  opacity: 50%;
 }
 
 .robot-hair-style {

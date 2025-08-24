@@ -3,6 +3,17 @@
   padding: 30px;
   margin-top: 60px;
   width: 100%;
+  position: fixed;
+  top: var(--header-h);
+  width: 100vw;
+  margin-left: calc(50% - 50vw);
+  margin-right: calc(50% - 50vw);
+  height: var(--page-heading-h);
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 1rem;
+  z-index: 500;
 }
 
 .legal-header h1 {
@@ -12,6 +23,8 @@
 }
 
 main {
+  padding-top: calc(var(--header-h) + var(--page-heading-h));
+  padding-bottom: var(--footer-h);
 }
 
 section {
@@ -53,6 +66,10 @@ section {
 }
 
 footer {
+  position: fixed;
+  inset-inline: 0;
+  bottom: 0;
+  height: var(--footer-h);
   display: flex;
   align-items: center;
   width: 100%;
