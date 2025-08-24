@@ -102,5 +102,5 @@ This assignment should prove that a student is able to:
   - [X] css: `/css/legal-page.css`
 - [X] The page heading container should be "pinned" in the top right beneath the header and take the full width of the viewport, regardless of how far the user scrolls down the page content.
 - [X] The footer should be anchored to the bottom of the viewport, ensuring it remains visible even while scrolling.
-- [ ] The section label should stay fixed in its parent while the user is scrolling through the current section.
+- [X] The section label should stay fixed in its parent while the user is scrolling through the current section.
 - [X] The content should not get obscured by any of the containers at the top and bottom of the page.
